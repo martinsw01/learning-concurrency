@@ -10,9 +10,9 @@ resolvers ++= Seq(
   "Sonatype OSS Releases" at
     "https://oss.sonatype.org/content/repositories/releases",
   "Typesafe Repopsitory" at
-    "http://repo.typesafe.com/typesafe/releases"
+    "https://repo.typesafe.com/typesafe/releases"
 )
 
-libraryDependencies += "Commons-io" % "commons-io" % "2.4"
+libraryDependencies += "commons-io" % "commons-io" % "2.4"
 
 fork := false
