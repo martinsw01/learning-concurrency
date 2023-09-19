@@ -1,7 +1,7 @@
-package no.msw.concurrency.jmm2
+package no.msw.concurrency.jmm2.processes_and_threads.threads
 
-import no.msw.concurrency.log
 import no.msw.concurrency.jmm2.thread
+import no.msw.concurrency.log
 
 /**
  * p. 35
@@ -10,7 +10,9 @@ import no.msw.concurrency.jmm2.thread
  */
 
 object ThreadsNondeterminism extends App {
-  val t = thread { log("New thread running.") }
+  val t = thread {
+    log("New thread running.")
+  }
   log("...")
   log("...")
   t.join()

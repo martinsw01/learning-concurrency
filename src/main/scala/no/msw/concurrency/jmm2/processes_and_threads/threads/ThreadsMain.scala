@@ -1,4 +1,4 @@
-package no.msw.concurrency.jmm2
+package no.msw.concurrency.jmm2.processes_and_threads.threads
 
 /**
  * p. 31

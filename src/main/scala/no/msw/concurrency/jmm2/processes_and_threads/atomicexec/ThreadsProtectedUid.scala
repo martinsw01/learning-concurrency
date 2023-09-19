@@ -1,19 +1,20 @@
-package no.msw.concurrency.jmm2.atomicexec
+package no.msw.concurrency.jmm2.processes_and_threads.atomicexec
 
 import no.msw.concurrency.jmm2.thread
 import no.msw.concurrency.log
 
+
 /**
- * p. 37
+ * p. 38
  *
- * An example of a race condition.
- * Ids are not necessarily unique, as getUniqueId is not atomic
+ * Make getUniqueId atomic with this.synchronized to avoid race conditions
  */
 
-object ThreadsUnprotectedUid extends App {
+
+object ThreadsProtectedUid extends App {
   var uidCount = 0L
 
-  def getUniqueId() = {
+  def getUniqueId() = this.synchronized {
     val freshUid = uidCount + 1
     uidCount = freshUid
     freshUid

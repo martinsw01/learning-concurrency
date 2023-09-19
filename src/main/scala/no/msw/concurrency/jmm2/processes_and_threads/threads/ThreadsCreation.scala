@@ -1,4 +1,4 @@
-package no.msw.concurrency.jmm2
+package no.msw.concurrency.jmm2.processes_and_threads.threads
 
 /**
  * p. 32
@@ -11,8 +11,8 @@ object ThreadsCreation extends App {
     }
   }
 
-  val t = new MyThread  // new
-  t.start()             // runnale
-  t.join()              // terminated
+  val t = new MyThread // new
+  t.start() // runnale
+  t.join() // terminated
   println("New thread joined")
 }

@@ -1,4 +1,4 @@
-package no.msw.concurrency.jmm2
+package no.msw.concurrency.jmm2.processes_and_threads.threads
 
 import no.msw.concurrency.jmm2.thread
 import no.msw.concurrency.log

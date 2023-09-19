@@ -1,4 +1,4 @@
-package no.msw.concurrency.jmm2.atomicexec
+package no.msw.concurrency.jmm2.processes_and_threads.atomicexec
 
 import no.msw.concurrency.jmm2.thread
 import no.msw.concurrency.log
